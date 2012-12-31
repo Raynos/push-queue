@@ -35,7 +35,7 @@
     "testem": "testem"
   },
   "testling": {
-    "files": "test/index.js",
+    "scripts": "test/bundle.js",
     "browsers": {
       "ie": [
         "8",
