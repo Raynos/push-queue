@@ -21,7 +21,7 @@
     "tape": "~0.1.5",
     "tt": "~1.0.0",
     "testem": "~0.2.50",
-    "browserify": "Gozala/node-browserify#patch-1"
+    "browserify": "git://github.com/Gozala/node-browserify#patch-1"
   },
   "licenses": [
     {
