@@ -1,0 +1,62 @@
+{
+  "name": "push-queue",
+  "version": "0.1.0",
+  "description": "A simple async queue to do an action one at a time",
+  "keywords": [],
+  "author": "Raynos <raynos2@gmail.com>",
+  "repository": "git://github.com/Raynos/push-queue.git",
+  "main": "index",
+  "homepage": "https://github.com/Raynos/push-queue",
+  "contributors": [
+    {
+      "name": "Jake Verbaten"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Raynos/push-queue/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "~0.1.5",
+    "tt": "~1.0.0",
+    "testem": "~0.2.50",
+    "browserify": "Gozala/node-browserify#patch-1"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/push-queue/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "node examples/simple.js && node test/index.js",
+    "build": "browserify test/index.js -o test/bundle.js",
+    "testem": "testem"
+  },
+  "testling": {
+    "files": "test/index.js",
+    "browsers": {
+      "ie": [
+        "8",
+        "9"
+      ],
+      "firefox": [
+        "15",
+        "17",
+        "nightly"
+      ],
+      "chrome": [
+        "22",
+        "23",
+        "canary"
+      ],
+      "opera": [
+        "12"
+      ],
+      "safari": [
+        "5.1"
+      ]
+    }
+  }
+}
