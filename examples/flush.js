@@ -5,9 +5,9 @@ var Queue = require("../index")
 var count = 0
 
 var enqueue = Queue(function (item, callback) {
-    // console.log("doing", item)
+    console.log("doing", item)
     setTimeout(function () {
-        // console.log("finished", item)
+        console.log("finished", item)
         callback()
     }, 100)
 })
@@ -19,11 +19,11 @@ enqueue("three", log("flushed three"))
 function log(msg) {
     return function () {
         count++
-        // console.log(msg)
+        console.log(msg)
     }
 }
 
 setTimeout(function () {
-    // console.log("count", count)
+    console.log("count", count)
     assert.equal(count, 3)
 }, 500)
