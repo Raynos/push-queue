@@ -21,7 +21,7 @@
     "tape": "~0.1.5",
     "tt": "~1.0.0",
     "testem": "~0.2.50",
-    "browserify": "git://github.com/Gozala/node-browserify#patch-1"
+    "browserify": "git://github.com/Raynos/node-browserify"
   },
   "licenses": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "scripts": {
-    "test": "node examples/simple.js && node test/index.js",
+    "test": "node test/index.js",
     "build": "browserify test/index.js -o test/bundle.js",
     "testem": "testem"
   },

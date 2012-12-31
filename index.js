@@ -5,17 +5,21 @@ function Queue(action) {
 
     return push
 
-    function push(data) {
-        buffer.push(data)
+    function push(data, callback) {
+        buffer.push([data, callback])
         if (buffer.length === 1) {
-            action(buffer[0], next)
+            action(data, next)
         }
     }
 
     function next() {
-        buffer.shift()
+        var tuple = buffer.shift()
+        var callback = tuple[1]
+
+        callback && callback()
+
         if (buffer.length > 0) {
-            action(buffer[0], next)
+            action(buffer[0][0], next)
         }
     }
 }
