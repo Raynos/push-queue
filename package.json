@@ -1,6 +1,6 @@
 {
   "name": "push-queue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple async queue to do an action one at a time",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
