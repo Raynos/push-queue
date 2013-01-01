@@ -6,9 +6,9 @@ var Queue = require("../index")
 var count = 0
 
 var enqueue = Queue(function (item, callback) {
-    console.log("# doing", item)
+    // console.log("# doing", item)
     process.nextTick(function () {
-        console.log("# finished", item, Date.now() - now)
+        // console.log("# finished", item, Date.now() - now)
         callback()
     })
 })
@@ -20,7 +20,7 @@ enqueue("three", log("# flushed three"))
 function log(msg) {
     return function () {
         count++
-        console.log(msg)
+        // console.log(msg)
     }
 }
 
