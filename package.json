@@ -17,7 +17,6 @@
     "email": "raynos2@gmail.com"
   },
   "dependencies": {
-    "browserify": "~1.17.0"
   },
   "devDependencies": {
     "tape": "~0.1.5",
